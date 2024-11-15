@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        /* Basic styles */
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        nav { background-color: #333; padding: 1em; }
+        nav a { color: white; margin-right: 1em; text-decoration: none; cursor: pointer; }
+        .tab { display: none; padding: 1em; }
+        .tab.active { display: block; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a id="bio-tab">Bio</a>
+        <a id="art-tab">Art</a>
+        <a id="essays-tab">Essays</a>
+        <a id="thoughts-tab">Thoughts</a>
+        <a id="links-tab">Links</a>
+    </nav>
+
+    <div id="art" class="tab active">
+        <h1>Art</h1>
+        <p>Welcome to my art gallery!</p>
+    </div>
+    <div id="essays" class="tab">
+        <h1>Essays</h1>
+        <p>Here are my longform essays.</p>
+    </div>
+    <div id="thoughts" class="tab">
+        <h1>Thoughts</h1>
+        <p>Shortform updates go here.</p>
+    </div>
+    <div id="bio" class="tab">
+        <h1>Bio</h1>
+        <p>About me!</p>
+    </div>
+    <div id="links" class="tab">
+        <h1>Links</h1>
+        <p>Cool websites I like!</p>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
